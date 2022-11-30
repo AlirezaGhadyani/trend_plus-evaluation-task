@@ -1,6 +1,14 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import type { AppProps } from "next/app";
+import { MuiProvider } from "../src/lib";
+import { Toaster } from "react-hot-toast";
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
-}
+const App = ({ Component, pageProps }: AppProps) => {
+  return (
+    <MuiProvider>
+      <Component {...pageProps} />
+      <Toaster />
+    </MuiProvider>
+  );
+};
+
+export default App;
