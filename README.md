@@ -67,5 +67,5 @@ Also, be sure to have `git` available in your PATH, `npm` might need it.
 ## Environment Variables
 
 ```
-NEXT_PUBLIC_BACKEND_BASE_URL=http://188.126.83.8:8051F
+NEXT_PUBLIC_BACKEND_BASE_URL=http://188.126.83.8:8051
 ```
