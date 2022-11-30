@@ -1,34 +1,71 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+  
 
-First, run the development server:
+# Welcome
 
-```bash
-npm run dev
-# or
-yarn dev
+  
+
+  
+
+  
+
+## Requirements
+
+For development, you will only need Node.js installed on your environement.
+And please use the appropriate [Editorconfig](http://editorconfig.org/) plugin for your Editor (not mandatory).
+
+
+### Node
+[Node](http://nodejs.org/) is really easy to install & now include [NPM](https://npmjs.org/).
+You should be able to run the following command after the installation procedure
+below.
+
+```
+node --version
+v16.17.0
+
+npm --version
+8.18.0
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### Node installation on OS X
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+You will need to use a Terminal. On OS X, you can find the default terminal in
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+`/Applications/Utilities/Terminal.app`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Please install [Homebrew](http://brew.sh/) if it's not already done with the following command.
 
-## Learn More
+```
+$ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+```
 
-To learn more about Next.js, take a look at the following resources:
+If everything when fine, you should run
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+brew install node
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+#### Node installation on Linux
+```
+sudo apt-get install python-software-properties
+sudo add-apt-repository ppa:chris-lea/node.js
+sudo apt-get update
+sudo apt-get install nodejs
+```
 
-## Deploy on Vercel
+  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+#### Node installation on Windows
+
+Just go on [official Node.js website](http://nodejs.org/) & grab the installer.
+
+Also, be sure to have `git` available in your PATH, `npm` might need it.
+
+## Environment Variables
+
+```
+NEXT_PUBLIC_BACKEND_BASE_URL=http://188.126.83.8:8051F
+```
