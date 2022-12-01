@@ -12,7 +12,7 @@ import { useBool } from "../../src/hooks";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
 
 const Login = () => {
-  const { control, submitHandler } = useSubmitForm();
+  const { control, submitHandler, isLoading } = useSubmitForm();
   const { bool: isVisibil, toggle: toggleVisibility } = useBool();
 
   return (
@@ -70,7 +70,11 @@ const Login = () => {
               control={<Checkbox name="rememberMe" control={control} />}
               label="Remember Me"
             />
-            <LoadingButton variant="contained" type="submit">
+            <LoadingButton
+              variant="contained"
+              type="submit"
+              loading={isLoading}
+            >
               Login
             </LoadingButton>
           </Stack>

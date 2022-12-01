@@ -5,7 +5,7 @@ export default function middleware(request) {
 
   const accessToken = cookies.get("access");
 
-  if (url === `${new URL("/", url)}`) {
+  if (url === `${new URL("/", url)}` || url === `${new URL("/add-hub", url)}`) {
     if (!accessToken) return NextResponse.redirect(new URL("/login", url));
 
     return NextResponse.next();
@@ -16,4 +16,6 @@ export default function middleware(request) {
 
     return NextResponse.redirect(new URL("/", url));
   }
+
+  return NextResponse.next();
 }

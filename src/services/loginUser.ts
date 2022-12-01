@@ -6,7 +6,11 @@ type Variables = {
 };
 
 const loginUser = (variables: Variables): Promise<any> => {
-  return AxiosClient.post("/login", variables);
+  return AxiosClient.post("/login", variables, {
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded",
+    },
+  });
 };
 
 export default loginUser;

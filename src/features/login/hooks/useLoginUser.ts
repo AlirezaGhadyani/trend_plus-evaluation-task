@@ -23,7 +23,7 @@ const useSubmitForm = () => {
     resolver: yupResolver(validationSchema),
   });
 
-  const { httpReq } = useHttpReq(loginUser);
+  const { httpReq, isLoading } = useHttpReq(loginUser);
 
   const { push } = useRouter();
 
@@ -58,7 +58,7 @@ const useSubmitForm = () => {
     });
   });
 
-  return { control, submitHandler };
+  return { control, submitHandler, isLoading };
 };
 
 export default useSubmitForm;

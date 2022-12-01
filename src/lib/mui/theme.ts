@@ -44,6 +44,7 @@ export default createTheme({
         root: () => ({
           "& .MuiFormLabel-root": {
             fontSize: "12px",
+            fontWeight: 400,
             lineHeight: "1.7375em",
             textTransform: "uppercase",
           },
@@ -66,6 +67,14 @@ export default createTheme({
       styleOverrides: {
         root: {
           borderRadius: 16,
+        },
+      },
+    },
+    MuiInputLabel: {
+      styleOverrides: {
+        root: {
+          fontSize: "14px",
+          fontWeight: 700,
         },
       },
     },
